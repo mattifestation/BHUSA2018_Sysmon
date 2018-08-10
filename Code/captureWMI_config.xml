@@ -1,0 +1,19 @@
+<Sysmon schemaversion="4.0">
+   <HashAlgorithms>*</HashAlgorithms>
+   <EventFiltering>
+      <ProcessCreate onmatch="include"/>
+      <FileCreateTime onmatch="include"/>
+      <NetworkConnect onmatch="include"/>
+      <ProcessTerminate onmatch="include"/>
+      <DriverLoad onmatch="include"/>
+      <ImageLoad onmatch="include"/>
+      <CreateRemoteThread onmatch="include"/>
+      <RawAccessRead onmatch="include"/>
+      <ProcessAccess onmatch="include"/>
+      <FileCreate onmatch="include"/>
+      <RegistryEvent onmatch="include"/>
+      <FileCreateStreamHash onmatch="include"/>
+      <PipeEvent onmatch="include"/>
+      <WmiEvent onmatch="exclude"/>
+  </EventFiltering>
+</Sysmon>
